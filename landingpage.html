@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="us-en">
+    <head>
+        <meta charset="utf-8">
+        <title>UBagri</title>
+        <style>
+            * {
+            margin: 0;
+            padding: 0;
+            font-family: 'poppins', sans-serif;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+        }
+
+        .container h1 {
+            margin-top: 70px;
+        }
+
+        .upper, .middle {
+            margin-bottom: 20px;
+        }
+
+        .middle h2,
+        .lower h2 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .upper p {
+            text-align: left;
+        }
+
+        .upper section,
+        .middle section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .upper section .right {
+            flex-basis: 50%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .upper section .left {
+            flex-basis: 50%;
+        }
+        .upper section .left img {
+            width: 200px;
+            height: 200px;
+        }
+
+        .middle .maize {
+            width: 410px;
+            height: 340px;
+            margin-top: -45%;
+            margin-left: 10%;
+        }
+
+        .middle section .middle_right,
+        .middle section .middle_left {
+            flex-basis: 50%;
+        }
+
+        .middle .digital {
+            width: 382px;
+            height: 180px;
+            z-index: 2;
+        }
+
+        .lower section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .lower .resource,
+        .lower .market {
+            justify-content: center;
+            flex-basis: 35%;
+        }
+        .lower .resource img {
+            width: 260px;
+            height: 196px;
+            margin-left: 20px;
+        }
+
+        .lower .market img {
+            width: 232ppx;
+            height: 196px;
+            margin-left: 20px;
+        }
+
+        .lower .market {
+            display: inline-block;
+            width: 45%;
+        }
+
+        .lower .weather {
+            width: 35%;
+            margin: 0 auto;
+        }
+
+        .lower .weather img {
+            margin-left: 30%;
+            width: 233px;
+            height: 169px;
+        }
+        header {
+            background-color: white;
+            width: 100%;
+            height: 70px;
+            z-index: 1000;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            border-bottom: 1px solid #CCCCCC;
+        }
+
+        header img {
+            width: 100px;
+            height: 50px;
+            flex-basis: 25%;
+        }
+
+        header .navigation {
+            display: flex;
+            flex-basis: 50%;
+            font-size: 24px;
+            justify-content: space-between;
+        }
+
+        header .navigation a {
+            text-decoration: none;
+        }
+
+        header .search-button {
+            display: flex;
+            border-radius: 20px;
+            background: #efefef;
+            flex-basis: 25%;
+            align-items: center;
+            padding: 0 15px;
+        }
+
+        header .search-button img {
+            width: 28px;
+            height: 18px;
+        }
+
+        header .search-button input {
+            width: 100%;
+            background: transparent;
+            padding: 10px;
+            outline: none;
+            border: 0;
+        }
+        footer {
+            background-color: rebeccapurple;
+            width: 100%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid #CCCCCC;
+        }
+
+        footer p {
+            font-size: 24px;
+        }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="images/logo.jpeg" alt="Logo">
+            </div>
+            <nav class="navigation">
+                <a href="#">About</a>
+                <a href="#">Weather</a>
+                <a href="#">Education</a>
+                <a href="#">Market</a>
+            </nav>
+            <div class="search-button">
+                <img src="images/search.png" alt="Search">
+                <input type="text" placeholder="Search">
+            </div>
+        </header>
+        <main>
+           <div class="container">
+    <div class="upper">
+        <h1>UBagri farmer support</h1>
+        <p>work with farmer who want <br>right education and be successful on market.</p>
+        <section>
+            <div class="right">
+                <p>Watch DEMO</p>
+            </div>
+            <div class="left">
+                <img src="images/agri_happ.png" alt="agri-happ">
+                <img src="images/agri_farmer.png" alt="agri farmer">
+                <img src="images/agri_tea.png" alt="agri tea">
+                <img src="images/image.png" alt="image">
+            </div>
+        </section>
+    </div>
+
+    <div class="middle">
+        <h2>only way to farm production</h2>
+        <section>
+            <div class="middle_left">
+                <img class="digital" src="images/agri_digital.png" alt="agri digital">
+                <img class="maize" src="images/agri_maize.png" alt="agri maize">
+            </div>
+            <div class="middle_right">
+                <h2>software for farmers</h2>
+                <p>
+                    this is business that helps farmers in Africa to get market access,
+                    stay updated on predictable climate change (weather),
+                    and get more resources for digital farming.
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <div class="lower">
+        <h2>Our services offer farmers</h2>
+        <section>
+            <div class="resource">
+                <img src="images/agri_icon3.png" alt="agri icon">
+                <p>
+                    this is business that helps farmers in Africa to get market access,
+                    stay updated on predictable climate change (weather),
+                    and get more resources for digital farming.
+                </p>
+            </div>
+            <div class="market">
+                <img src="images/agri_market_icon.png" alt="agri market icon">
+                <p>
+                    Making hard harvests more productive is challenging,
+                    but knowing where to locate</p> <p> markets and pricing can be problematic for farmers.
+                    We offer solutions for these issues when you work with us.
+                </p>
+            </div>
+        </section>
+
+        <div class="weather">
+            <img src="images/agri_weather_icon.png" alt="agri weather icon">
+            <p>
+                Determination and prediction of climate every day and season are essential
+                for becoming a successful farmer.
+            </p>
+        </div>
+    </div>
+</div>
+        </main>
+        <footer>
+            <p>&copy; UBagri</p>
+        </footer>
+    </body>
+</html>

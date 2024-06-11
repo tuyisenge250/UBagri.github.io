@@ -1,119 +1,13 @@
 <!DOCTYPE html>
-<html lang="us-en">
-    <head>
-        <meta charset="utf-8">
-        <title>UBagri</title>
-        <style>
-            * {
-            margin: 0;
-            padding: 0;
-            font-family: 'poppins', sans-serif;
-            box-sizing: border-box;
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 30px auto;
-        }
-
-        .container h1 {
-            margin-top: 70px;
-        }
-
-        .upper, .middle {
-            margin-bottom: 20px;
-        }
-
-        .middle h2,
-        .lower h2 {
-            text-align: center;
-        }
-
-        p {
-            text-align: center;
-        }
-
-        .upper p {
-            text-align: left;
-        }
-
-        .upper section,
-        .middle section {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .upper section .right {
-            flex-basis: 50%;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .upper section .left {
-            flex-basis: 50%;
-        }
-        .upper section .left img {
-            width: 200px;
-            height: 200px;
-        }
-
-        .middle .maize {
-            width: 410px;
-            height: 340px;
-            margin-top: -45%;
-            margin-left: 10%;
-        }
-
-        .middle section .middle_right,
-        .middle section .middle_left {
-            flex-basis: 50%;
-        }
-
-        .middle .digital {
-            width: 382px;
-            height: 180px;
-            z-index: 2;
-        }
-
-        .lower section {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .lower .resource,
-        .lower .market {
-            justify-content: center;
-            flex-basis: 35%;
-        }
-        .lower .resource img {
-            width: 500px;
-            height: 220px;
-            margin-left: 20px;
-        }
-
-        .lower .market img {
-            width: 300ppx;
-            height: 200px;
-            margin-left: 20px;
-        }
-
-        .lower .market {
-            display: inline-block;
-            width: 45%;
-        }
-
-        .lower .weather {
-            width: 40c%;
-            margin: 0 auto;
-        }
-
-        .lower .weather img {
-            width: 400px;
-            height: 200px;
-        }
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UBagri</title>
+    <style>
         header {
-            background-color: white;
+            background-color: black;
             width: 100%;
             height: 70px;
             z-index: 1000;
@@ -122,6 +16,7 @@
             align-items: center;
             justify-content: space-around;
             border-bottom: 1px solid #CCCCCC;
+            color: white;
         }
 
         header img {
@@ -175,95 +70,282 @@
         footer p {
             font-size: 24px;
         }
-        </style>
-    </head>
-    <body>
-        <header>
-            <div class="logo">
-                <img src="images/logo.jpeg" alt="Logo">
-            </div>
-            <nav class="navigation">
-                <a href="#">About</a>
-                <a href="#">Weather</a>
-                <a href="#">Education</a>
-                <a href="#">Market</a>
-            </nav>
-            <div class="search-button">
-                <img src="images/search.png" alt="Search">
-                <input type="text" placeholder="Search">
-            </div>
-        </header>
-        <main>
-           <div class="container">
-    <div class="upper">
-        <h1>UBagri farmer support</h1>
-        <p>work with farmer who want <br>right education and be successful on market.</p>
-        <section>
-            <div class="right">
-                <p>Watch DEMO</p>
-            </div>
-            <div class="left">
-                <img src="images/agri_happ.png" alt="agri-happ">
-                <img src="images/agri_farmer.png" alt="agri farmer">
-                <img src="images/agri_tea.png" alt="agri tea">
-                <img src="images/image.png" alt="image">
-            </div>
-        </section>
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+        .part1{
+            width:100%;
+            display:flex;
+            height: 50vh;
+            background: linear-gradient(#000, #ddd);
+        }
+        .part1left{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .part1left h1{
+            color: white;
+            text-align: right;
+        }
+        .part1left h2{
+            margin: -2px;
+            color: white;
+            text-align: right;
+        }
+        .part1left p{
+            color: #fff;
+            font-size: 20px;
+            margin-left: 30px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .part1left button{
+            background: linear-gradient(red, #fff);
+            color: #000;
+            width: 200px;
+            height: 30px;
+            margin-left: 150px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .part1right{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+        .part1right img{
+            margin-left: 200px;
+            margin-top: 10px;
+        }
+        .part2{
+            background-color: #ddd;
+            height: 55vh;
+            width: 100%;
+            background-image: url(images/agri_marketing.png);
+            display: flex;
+            background-repeat: no-repeat;
+            background-size: 500px 250px;
+        }
+        .part2right{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #ddd;
+            
+        }
+        h1{
+            font-size: 30px;
+            font-weight: 800;
+            display: block;
+            width: 350px;
+        }
+        p{
+            font-size: 20px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            margin: -2px;
+            display: block;
+            width: 300px;
+            height: auto;
+        }
+        .part2left{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+        }
+        .part2left img{
+            margin-left: 80px;
+            margin-top: 100px;
+        }
+        .part3{
+            height: 55vh;
+            width: 100%;
+            display: flex;
+            background-size: 400px 200px;
+            background-color: #ddee;
+        }
+        .part3left{
+            height: 100%;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            }
+        .part3right{
+            height: 100%;
+            width: 50%;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+        }
+        .part4{
+            height: 60vh;
+            width: 100%;
+            display: flex;
+            background-size: 400px 200px;
+            background-color: #deee;
+        }
+        .part4left{
+            height: 100%;
+            width: 50%;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            flex-direction: column;
+        }
+        .part4lefttop{
+            height: 50%;
+            width: 100%;
+            background-image: url(images/agri_blogs_profile.png);
+            background-repeat: no-repeat;
+            background-size: 300px 300px;
+        }
+        .part4leftbottom{
+            height: 50%;
+            width: 100%;
+            background-image: url(images/agri_blogs_creation.png);
+            background-repeat: no-repeat;
+            background-size: 300px 300px;
+        }
+        .part4lefttop img{
+            margin-left: 100px;
+            margin-top: 50px;
+        }
+        .part4right{
+            height: 100%;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .part5{
+            display: flex;
+            width: 100%;
+            height: auto;
+            justify-content: space-around;
+        }
+        .part5 h1{
+            font-weight: 900;
+            font-size: 60px;
+            color: blue;
+            display: block;
+            width: 200px;
+            height: auto;
+            margin: 10px;
+            justify-self: center;
+        }
+        .block{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            width: 300px;
+            border: 2px #ddd solid;
+            border-radius: 5px;
+        }
+        .block p{
+            display: block;
+            width: 200px;
+            height: auto;
+            margin: -2px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.jpeg" alt="Logo">
+        </div>
+        <nav class="navigation">
+            <a href="#">About</a>
+            <a href="#">Weather</a>
+            <a href="#">Education</a>
+            <a href="#">Market</a>
+        </nav>
+        <div class="search-button">
+            <img src="images/search.png" alt="Search">
+            <input type="text" placeholder="Search">
+        </div>
+    </header>
+    <div class="part1">
+        <div class="part1left">
+            <h1>UBagri farmer support</h1>
+            <h2>We are win for sale</h1>
+            <p>work with farmer who want <br>
+                right education and be successful on market.</p>
+            <button>Watch demo</button>
+        </div>
+        <div class="part1right">
+            <img src="images/agri_our_farmer.png" alt="" srcset="" width="400px" height="300px">
+        </div>   
     </div>
-
-    <div class="middle">
-        <h2>only way to farm production</h2>
-        <section>
-            <div class="middle_left">
-                <img class="digital" src="images/agri_digital.png" alt="agri digital">
-                <img class="maize" src="images/agri_maize.png" alt="agri maize">
-            </div>
-            <div class="middle_right">
-                <h2>software for farmers</h2>
-                <p>
-                    this is business that helps farmers in Africa to get market access,
-                    stay updated on predictable climate change (weather),
-                    and get more resources for digital farming.
-                </p>
-            </div>
-        </section>
+    <div class="part2">
+        <div class="part2left">
+            <img src="images/agri_resource.png" alt="resource" height="250px" width="500px">
+        </div>
+        <div class="part2right">
+            <h1>move faster for haversting More farmer</h1>
+            <p>This is website that support different 
+                farmer in African to faster successful through
+                get farmer connect with market and resource
+            </p>
+        </div>
+        
     </div>
-
-    <div class="lower">
-        <h2>Our services offer farmers</h2>
-        <section>
-            <div class="resource">
-                <img src="images/agri_weather_dt.png" alt="agri icon">
-                <p>
-                    Experience the future of weather forecasting with our state-of-the-art weather determination technology. Utilizing advanced algorithms and real-time data, our system delivers precise and reliable weather predictions tailored to your location. Whether you're planning your day, organizing an event, or preparing for extreme weather conditions, our accurate forecasts empower you to make informed decisions with confidence. Stay ahead of the elements with our cutting-edge weather determination, ensuring you’re always prepared for whatever the skies may bring.
-
-this is business that helps farmers in Africa to get market access,
-                    stay updated on predictable climate change (weather),
-                    and get more resources for digital farming.
-                </p>
+    <div class="part3">
+        <div class="part3left">
+            <h1>choose how to work with on UBagri like you want</h1>
+            <p>UBagri have many way, to interact with it
+                and it best for sharing market info with
+                new, connect with buyers, weather info for interact
+                with season and more resource we are best
+            </p>
+        </div>
+        <div class="part3right">
+            <img src="images/agri_home.png" alt="home" height="300px" width="500px">
+        </div>
+    </div>
+    <div class="part4">
+        <div class="part4left">
+            <div class="part4lefttop">
+                <img src="images/agri_marketing_profile.png" alt="" width="400px" height="300px">
             </div>
-            <div class="market">
-                <img src="images/agri_marketing.png" alt="agri market icon">
-                <p>
-                    At the heart of our dynamic marketing team is our dedicated Marketing Representative, a vital link between our innovative products and our valued customers. With a keen eye for market trends and a passion for building meaningful relationships, our representative ensures that our brand's voice resonates with the right audience. They craft compelling marketing strategies, foster partnerships, and drive engagement across multiple platforms. 
-                </p>
-            </div>
-        </section>
-
-        <div class="weather">
-            <img src="images/agri_resource.png" alt="agri weather icon">
+            <div class="part4leftbottom"></div>
+            <div class="part4leftright"></div>
+        </div>
+        <div class="part4right">
+            <h1>Bring your farmer before buyers</h1>
             <p>
-                Unlock the potential of modern farming with our comprehensive 
-                agricultural resource education platform. Designed for 
-                farmers, students, and agricultural enthusiasts, our resources provide in-depth knowledge and practical insights into sustainable farming practices, crop management, and innovative agricultural technologies. Whether you're looking to boost your crop yields, implement eco-friendly farming methods, or stay updated with the latest industry trends, our educational tools and resources are here to guide you every step of the way. Join our community of forward-thinking agriculturalists a
-                nd cultivate a brighter, more sustainable future.
+                one way to interact with market and 
+                site into sponsorship is to create 
+                good blogs then put before buyers
             </p>
         </div>
     </div>
-</div>
-        </main>
-        <footer>
-            <p>&copy; UBagri</p>
-        </footer>
-    </body>
+    <div class="part5">
+        <div class="block">
+            <h1>80%</h1>
+            <p>all get market for their product</p>
+        </div>
+        <div class="block">
+            <h1>85%</h1>
+            <p>users seccessful due to resource</p>
+        </div>
+        <div class="block">
+            <h1>78%</h1>
+            <p>connect to sponsors for his/her farm</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; UBagri</p>
+    </footer>
+</body>
 </html>
